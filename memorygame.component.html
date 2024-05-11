@@ -1,0 +1,66 @@
+<html>
+<body>
+<div Class="notebook">
+    <div class="button-container">
+        <button class="cancel-button"><img src="assets/svg/cancelbutton.svg" alt="cancel-button"></button>
+        <button class="hint-button"><img src="assets/svg/hintbutton.svg" alt="hint-button"></button>
+    </div>
+
+    <section class="memory-game">
+        <div class="memory-card" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/A-upper.svg" alt="A"/>
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match1" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/a-lower.svg" alt="a"/>
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+
+        <div class="memory-card" type="match2" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/B-upper.svg" alt="B" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match2" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/b-lower.svg" alt="b" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+
+        <div class="memory-card" type="match3" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/H-upper.svg" alt="H" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match3" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/h-lower.svg" alt="h" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+
+        <div class="memory-card" type="match4" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/D-upper.svg" alt="D" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match4" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/d-lower.svg" alt="d" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+
+        <div class="memory-card" type="match5" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/R-upper.svg" alt="R" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match5" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/r-lower.svg" alt="r" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+
+        <div class="memory-card" type="match6" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/Æ-upper.svg" alt="æ" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+        <div class="memory-card" type="match6" (click)="flipCard(cards)">
+            <img class="front-face" src="assets/cards/æ-lower.svg" alt="Æ" />
+            <img class="back-face" src="assets/cards/polka.jpg" alt="Back of the card" />
+        </div>
+    </section>
+</div>
+</body>
+</html>
