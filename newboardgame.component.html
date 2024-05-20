@@ -1,0 +1,24 @@
+
+<div class="boardgame">
+    <div  class="player" *ngIf="coordinates[currentPlayerPosition]" [style.left.px]="coordinates[currentPlayerPosition].x" [style.top.px]="coordinates[currentPlayerPosition].y">
+        <img *ngIf="imageSrc; else defaultImage" [src]="imageSrc" alt="selected buddy">
+        <!-- Default player piece-->
+        <ng-template #defaultImage>
+            <img src="assets/svg/buddy/default.svg" alt="default buddy">
+        </ng-template>
+    </div>
+</div>
+<div class="container">
+    <div #dice class="dice">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+    </div>
+
+    <button #rollBtn class="roll" (click)="randomDice()">
+        Rul
+    </button>
+</div>
